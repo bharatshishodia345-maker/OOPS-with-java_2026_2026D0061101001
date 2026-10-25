@@ -3,7 +3,7 @@ package com.kiet.library.model;
 
 public class Book {
 
-    private int bookId;
+    private Long bookId;
     private String title;
     private String author;
     private String category;
@@ -13,10 +13,8 @@ public class Book {
     public Book() {
     }
 
-    public Book(int bookId, String title, String author,
-                String category, int publicationYear,
-                boolean available) {
-        this.bookId = bookId;
+    public Book(String title, String author, String category,
+                int publicationYear, boolean available) {
         this.title = title;
         this.author = author;
         this.category = category;
@@ -24,11 +22,11 @@ public class Book {
         this.available = available;
     }
 
-    public int getBookId() {
+    public Long getBookId() {
         return bookId;
     }
 
-    public void setBookId(int bookId) {
+    public void setBookId(Long bookId) {
         this.bookId = bookId;
     }
 
